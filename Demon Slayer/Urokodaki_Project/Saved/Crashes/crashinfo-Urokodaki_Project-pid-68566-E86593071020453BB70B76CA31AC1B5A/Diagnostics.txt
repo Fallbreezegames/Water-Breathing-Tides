@@ -1,0 +1,47 @@
+Generating report for minidump
+
+Application version 5.6.1.0
+ ... built from changelist 0
+
+OS version Linux 6.17.1-200.nobara.fc42.x86_64 (network name: Monkbara-pc)
+Running 6 x86_64 processors (12 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x00000000000003d0"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!FMaterialResource::GetMaterialDomain() const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Containers/EnumAsByte.h:88]
+libUnrealEditor-Engine.so!CompileDebugViewModeShaders(EDebugViewShaderMode, EMaterialQualityLevel::Type, ERHIFeatureLevel::Type, TSet<UMaterialInterface*, DefaultKeyFuncs<UMaterialInterface*, false>, FDefaultSetAllocator>&, FSlowTask*) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Engine/Private/DebugViewModeHelpers.cpp:330]
+libUnrealEditor-MaterialEditor.so!FMaterialEditorUtilities::BuildTextureStreamingData(UMaterialInterface*) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditorUtilities.cpp:819]
+libUnrealEditor-MaterialEditor.so!UMaterialEditingLibrary::RecompileMaterial(UMaterial*) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditingLibrary.cpp:738]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::UpdateOriginalMaterial() [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:2998]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::PostUndo(bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:7396]
+libUnrealEditor-UnrealEd.so!UEditorEngine::BroadcastPostUndoRedo(FTransactionContext const&, bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:5344]
+libUnrealEditor-UnrealEd.so!UEditorEngine::HandleTransactorRedoUndo(FTransactionContext const&, bool, bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1178]
+libUnrealEditor-UnrealEd.so!TBaseUObjectMethodDelegateInstance<false, UEditorEngine, void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FTransactionContext const&, bool) const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-UnrealEd.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>, FTransactionContext const&, bool>(FTransactionContext const&, bool) const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:258]
+libUnrealEditor-UnrealEd.so!UTransBuffer::Undo(bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1080]
+libUnrealEditor-UnrealEd.so!UEditorEngine::UndoTransaction(bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1303]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::UndoGraphAction() [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:7098]
+libUnrealEditor-MaterialEditor.so!TBaseSPMethodDelegateInstance<false, FMaterialEditor, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-Slate.so!FUICommandList::ConditionalProcessCommandBindings(FKey, bool, bool, bool, bool, bool) const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:635]
+libUnrealEditor-Slate.so!FUICommandList::ProcessCommandBindings(FKeyEvent const&) const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:178]
+libUnrealEditor-UnrealEd.so!SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:447]
+libUnrealEditor-UnrealEd.so!non-virtual thunk to SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:0]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessKeyDownEvent(FKeyEvent const&) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4849]
+libUnrealEditor-Slate.so!FSlateApplication::OnKeyDown(int, unsigned int, bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4756]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:321]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:237]
+UnrealEditor!FEngineLoop::Tick() [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5548]
+UnrealEditor!GuardedMain(char16_t const*) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x3574)
+libc.so.6!__libc_start_main(+0x87)
+UnrealEditor!_start [/home/nathan/Desktop/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

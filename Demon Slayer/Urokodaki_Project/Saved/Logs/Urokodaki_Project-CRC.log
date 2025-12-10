@@ -1,0 +1,104 @@
+﻿Log file open, 11/18/25 15:12:22
+LogICUInternationalization: OS requested locale 'en_US' is not supported. Using the OS requested language of 'en-US' as the locale.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -8:00, Platform Override: ''
+LogConfig: No local boot hotfix file found at: [/home/nathan/.config/Epic/CrashReportClient/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogInit: ExecutableName: CrashReportClientEditor
+LogInit: Build: UE5-CL-0
+LogInit: Platform=Linux
+LogInit: MachineId=e68f998fbcd34e12abee8631996cff72-000003e8
+LogInit: DeviceId=
+LogInit: Engine Version: 5.6.1-0+UE5
+LogInit: Compatible Engine Version: 5.6.0-0+UE5
+LogInit: Net CL: 0
+LogInit: OS: Nobara Linux 42 (KDE Plasma Desktop Edition) (6.17.7-200.nobara.fc42.x86_64), CPU: AMD Ryzen 5 3600 6-Core Processor, GPU: NVIDIA GeForce RTX 3070 (NVIDIA UNIX Open Kernel Module for x86_64  580.105.08  Release Build  (dvs-builder@U22-I3-B10-02-5)  Wed Oct 29 22:29:53 UTC 2025)
+LogInit: Compiled (64-bit): Oct 16 2025 01:35:03
+LogInit: Architecture: x64
+LogInit: Compiled with Clang: 18.1.0rc (github.com/llvm/llvm-project 461274b81d8641eab64d494accddc81d7db8a09e)
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: UE5
+LogInit: Command Line:  -Abslog="/home/nathan/Desktop/Unreal Projects/Demon Slayer/Urokodaki_Project/Saved/Logs/Urokodaki_Project-CRC.log" "/home/nathan/Desktop/Unreal Projects/Demon Slayer/Urokodaki_Project/Saved/Crashes/crashinfo-Urokodaki_Project-pid-13074-44A3CBA23AD74F80971E8A8029B806D1/"
+LogInit: Base Directory: /home/nathan/Desktop/UnrealEngine-release/Engine/Binaries/Linux/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC.
+LogInit: Object subsystem initialized
+LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2025.11.18-23.12.23:005][  0]LogInit: Unix hardware info:
+[2025.11.18-23.12.23:005][  0]LogInit:  - we are the first instance of this executable
+[2025.11.18-23.12.23:005][  0]LogInit:  - this process' id (pid) is 15884, parent process' id (ppid) is 13074
+[2025.11.18-23.12.23:005][  0]LogInit:  - we are not running under debugger
+[2025.11.18-23.12.23:005][  0]LogInit:  - machine network name is 'Monkbara-pc'
+[2025.11.18-23.12.23:005][  0]LogInit:  - user name is 'nathan' (nathan)
+[2025.11.18-23.12.23:005][  0]LogInit:  - we're logged in locally
+[2025.11.18-23.12.23:005][  0]LogInit:  - we're running with rendering
+[2025.11.18-23.12.23:005][  0]LogInit:  - CPU: AuthenticAMD 'AMD Ryzen 5 3600 6-Core Processor' (signature: 0x870F10)
+[2025.11.18-23.12.23:005][  0]LogInit:  - Number of physical cores available for the process: 6
+[2025.11.18-23.12.23:005][  0]LogInit:  - Number of logical cores available for the process: 12
+[2025.11.18-23.12.23:005][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 3070 (NVIDIA UNIX Open Kernel Module for x86_64  580.105.08  Release Build  (dvs-builder@U22-I3-B10-02-5)  Wed Oct 29 22:29:53 UTC 2025)
+[2025.11.18-23.12.23:005][  0]LogInit:  - Memory allocator used: Mimalloc
+[2025.11.18-23.12.23:005][  0]LogInit:  - This is an internal build.
+[2025.11.18-23.12.23:005][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2025.11.18-23.12.23:005][  0]LogInit: Unix-specific commandline switches:
+[2025.11.18-23.12.23:005][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2025.11.18-23.12.23:005][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2025.11.18-23.12.23:005][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2025.11.18-23.12.23:005][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2025.11.18-23.12.23:005][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2025.11.18-23.12.23:005][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2025.11.18-23.12.23:005][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2025.11.18-23.12.23:005][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2025.11.18-23.12.23:005][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2025.11.18-23.12.23:005][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2025.11.18-23.12.23:005][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2025.11.18-23.12.23:005][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2025.11.18-23.12.23:005][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2025.11.18-23.12.23:005][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
+[2025.11.18-23.12.23:005][  0]LogInit:  - Physical RAM available (not considering process quota): 16 GB (15905 MB, 16287504 KB, 16678404096 bytes)
+[2025.11.18-23.12.23:005][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
+[2025.11.18-23.12.23:005][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2025.11.18-23.12.23:005][  0]LogInit:  - PageSize 4096
+[2025.11.18-23.12.23:005][  0]LogInit:  - BinnedPageSize 65536
+[2025.11.18-23.12.23:009][  0]LogUObjectArray: 552 objects as part of root set at end of initial load.
+[2025.11.18-23.12.23:009][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2025.11.18-23.12.23:009][  0]LogUObjectArray: CloseDisregardForGC: 552/552 objects in disregard for GC pool
+[2025.11.18-23.12.23:010][  0]LogInit: Using OS detected language (en-US).
+[2025.11.18-23.12.23:010][  0]LogInit: Using OS detected locale (en-US).
+[2025.11.18-23.12.23:011][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.11.18-23.12.23:064][  0]LogInit: Using OS detected language (en-US).
+[2025.11.18-23.12.23:064][  0]LogInit: Using OS detected locale (en-US).
+[2025.11.18-23.12.23:064][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.11.18-23.12.23:064][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2025.11.18-23.12.23:064][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000039 seconds
+[2025.11.18-23.12.23:066][  0]CrashReportCoreLog: Display: Applying project settings from '/home/nathan/Desktop/Unreal Projects/Demon Slayer/Urokodaki_Project/Saved/Crashes/crashinfo-Urokodaki_Project-pid-13074-44A3CBA23AD74F80971E8A8029B806D1/CrashReportClient.ini'.
+[2025.11.18-23.12.23:066][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2025.11.18-23.12.23:066][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2025.11.18-23.12.23:066][  0]CrashReportCoreLog: DataRouter disabled
+[2025.11.18-23.12.23:066][  0]LogInit: Initializing SDL.
+[2025.11.18-23.12.23:176][  0]LogInit: Initialized SDL 2.30.6 revision: SDL-2.30.6-no-vcs (compiled against 2.30.6)
+[2025.11.18-23.12.23:176][  0]LogInit: Using SDL video driver 'x11'
+[2025.11.18-23.12.23:188][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2025.11.18-23.12.23:188][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2025.11.18-23.12.23:188][  0]LogSlate: Using FreeType 2.10.0
+[2025.11.18-23.12.23:189][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2025.11.18-23.12.23:189][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2025.11.18-23.12.23:289][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.11.18-23.12.23:351][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.11.18-23.12.23:351][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.11.18-23.12.23:422][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.11.18-23.12.23:430][  0]LogSlate: Took 0.000931 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.11.18-23.12.23:433][  0]LogSlate: Took 0.002171 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.11.18-23.12.23:435][  0]LogSlate: Took 0.000554 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.11.18-23.12.27:106][  0]LogSlate: Request Window 'Urokodaki_Project Crash Reporter' being destroyed
+[2025.11.18-23.12.27:106][  0]LogSlate: Window 'Urokodaki_Project Crash Reporter' being destroyed
+[2025.11.18-23.12.27:110][  0]LogCore: Engine exit requested (reason: OnRequestExit)
+[2025.11.18-23.12.27:111][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.11.18-23.12.27:111][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.11.18-23.12.27:124][  0]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.11.18-23.12.27:125][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit; note: exit was already requested)
+[2025.11.18-23.12.27:125][  0]LogExit: Preparing to exit.
+[2025.11.18-23.12.27:126][  0]LogExit: Object subsystem successfully closed.
+[2025.11.18-23.12.27:127][  0]LogPakFile: Destroying PakPlatformFile
+[2025.11.18-23.12.27:128][  0]LogExit: Exiting.
+[2025.11.18-23.12.27:129][  0]LogInit: Tearing down SDL.
+[2025.11.18-23.12.27:138][  0]Log file closed, 11/18/25 15:12:27

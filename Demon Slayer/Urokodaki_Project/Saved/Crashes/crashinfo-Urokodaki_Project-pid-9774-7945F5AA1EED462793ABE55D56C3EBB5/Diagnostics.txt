@@ -1,0 +1,33 @@
+Generating report for minidump
+
+Application version 5.6.1.0
+ ... built from changelist 0
+
+OS version Linux 6.17.7-200.nobara.fc42.x86_64 (network name: Monkbara-pc)
+Running 6 x86_64 processors (12 logical cores)
+Exception was "SIGABRT: abort() called"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libc.so.6!UnknownFunction(0x7a462)
+libc.so.6!UnknownFunction(0x6e75b)
+libc.so.6!UnknownFunction(0x6edcb)
+libc.so.6!pthread_cond_timedwait(+0x177)
+libUnrealEditor-Core.so!FPThreadEvent::Wait(unsigned int, bool) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Core/Private/GenericPlatform/GenericPlatformProcess.cpp:498]
+libUnrealEditor-RenderCore.so!FRenderCommandFence::Wait(bool) const [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/Runtime/Core/Public/HAL/Event.h:89]
+libUnrealEditor-RenderCore.so!TArray<FFrameEndSync::FRenderThreadFence, TSizedInlineAllocator<2u, 32, TSizedDefaultAllocator<32> > >::RemoveAt(int, EAllowShrinking) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/RenderCore/Private/RenderingThread.cpp:2043]
+libUnrealEditor-RenderCore.so!FFrameEndSync::Sync(FFrameEndSync::EFlushMode) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/RenderCore/Private/RenderingThread.cpp:2094]
+UnrealEditor!FEngineLoop::Tick() [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5839]
+UnrealEditor!GuardedMain(char16_t const*) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/nathan/Desktop/UnrealEngine-release/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x3574)
+libc.so.6!__libc_start_main(+0x87)
+UnrealEditor!_start [/home/nathan/Desktop/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
